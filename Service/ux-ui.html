@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/x-icon" href="/images/Gitgo_Logo-removebg-preview.png">
+  <title>UX/UI Design | GitGo Technologies</title>
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+   <!-- Using Inter (body), Montserrat (headings), Open Sans (fallback/secondary) -->
+     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="/css/media.css" />
+  <!-- -----AOS libraries------------ -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+
+<body>
+<!-- ==================== HEADER ==================== -->
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+    <div class="container-fluid">
+
+      <!-- Logo -->
+      <a class="navbar-brand ms-md-3 ms-xl-4" href="#">
+        <img src="/images/Gitgo_Logo-removebg-preview.png" alt="GitGo Logo" height="55"
+          class="d-inline-block align-text-top ms-2" />
+      </a>
+
+      <!-- Toggler -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navbar Content -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav align-items-center ms-auto">
+
+          <!-- Home & About -->
+          <li class="nav-item"><a class="nav-link" href="/index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="/pages/about.html">About</a></li>
+
+          <!-- ==================== SERVICES DROPDOWN ==================== -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Services
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+
+              <!-- Website Design -->
+              <li class="dropdown-submenu">
+                <a class="dropdown-item dropdown-toggle d-flex justify-content-between align-items-center" href="#">Website Design<i class="fa-solid fa-angle-right"></i></a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="/Service/ux-ui.html">UI/UX Design</a></li>
+                  <li><a class="dropdown-item" href="/Service/figma.html">Figma</a></li>
+                  <li><a class="dropdown-item" href="/Service/adobe.html">Adobe</a></li>
+                </ul>
+              </li>
+
+              <!-- Website Development -->
+              <li class="dropdown-submenu">
+                <a class="dropdown-item dropdown-toggle d-flex justify-content-between align-items-center" href="#">Website Development<i class="fa-solid fa-angle-right"></i></a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="/Service/Front-end-development.html">Frontend Development</a></li>
+                  <li><a class="dropdown-item" href="/Service/backend-development.html">Backend Development</a></li>
+                  <li><a class="dropdown-item" href="/Service/full-stack-development.html">Full Stack Development</a></li>
+                  <li><a class="dropdown-item" href="/Service/API-integration.html">API Integration</a></li>
+                  <li><a class="dropdown-item" href="/Service/cms-development.html">CMS Development</a></li>
+                </ul>
+              </li>
+
+              <!-- Deployment & Support -->
+              <li class="dropdown-submenu">
+                <a class="dropdown-item dropdown-toggle d-flex justify-content-between align-items-center" href="#">Website Deployment & Support<i class="fa-solid fa-angle-right"></i></a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="/Service/hosting-server-setup.html">Hosting & Server Setup</a></li>
+                  <li><a class="dropdown-item" href="/Service/Website-deployment-services.html">Website Deployment Services</a></li>
+                  <li><a class="dropdown-item" href="/Service/Security-backup.html">Security & Backup</a></li>
+                  <li><a class="dropdown-item" href="/Service/Technical-support.html">Technical Support</a></li>
+                </ul>
+              </li>
+
+              <!-- Digital Marketing -->
+              <li class="dropdown-submenu">
+                <a class="dropdown-item dropdown-toggle d-flex justify-content-between align-items-center" href="#">Digital Marketing<i class="fa-solid fa-angle-right"></i></a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="/Service/SEO.html">Search Engine Optimization</a></li>
+                  <li><a class="dropdown-item" href="/Service/SMM.html">Social Media Marketing</a></li>
+                  <li><a class="dropdown-item" href="/Service/PPC.html">Pay Per Click</a></li>
+                  <li><a class="dropdown-item" href="/Service/emailMarketing.html">Email Marketing</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+
+          <!-- ==================== CONSULTING DROPDOWN ==================== -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="consultingDropdown" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Consulting & Services
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="consultingDropdown">
+
+              <!-- Software Development -->
+              <li class="dropdown-submenu">
+                <a class="dropdown-item dropdown-toggle dropdown-item dropdown-toggle d-flex justify-content-between align-items-center" href="#">Software Development<i class="fa-solid fa-angle-right"></i></a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="/Cosulting/Custom-Software-development.html">Custom Software Development</a></li>
+                  <li><a class="dropdown-item" href="/Cosulting/Software-Maintainance.html">Software Maintenance</a></li>
+                  <li><a class="dropdown-item" href="/Cosulting/MobileApp-development.html">Mobile Application Development</a></li>
+                </ul>
+              </li>
+
+              <!-- Software Testing -->
+              <li class="dropdown-submenu">
+                <a class="dropdown-item dropdown-toggle dropdown-item dropdown-toggle d-flex justify-content-between align-items-center" href="#">Software Testing<i class="fa-solid fa-angle-right"></i></a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="/Cosulting/manual-testing.html">Manual Testing</a></li>
+                  <li><a class="dropdown-item" href="/Cosulting/Automation-testing.html">Automation Testing</a></li>
+                  <li><a class="dropdown-item" href="/Cosulting/performance-testing.html">Performance Testing</a></li>
+                  <li><a class="dropdown-item" href="/Cosulting/mobile-app-testing.html">Mobile App Testing</a></li>
+                  <li><a class="dropdown-item" href="/Cosulting/api-testing.html">API Testing</a></li>
+                  <li><a class="dropdown-item" href="/Cosulting/Bug-tracking.html">Bug Tracking & Reporting</a></li>
+                </ul>
+              </li>
+
+              <!-- Analyst & Engineer -->
+              <li class="dropdown-submenu">
+                <a class="dropdown-item dropdown-toggle dropdown-item dropdown-toggle d-flex justify-content-between align-items-center" href="#">Analyst | Engineer GenAI<i class="fa-solid fa-angle-right"></i></a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="/Cosulting/data-analyst.html">Data Analyst GenAI</a></li>
+                  <li><a class="dropdown-item" href="/Cosulting/data-engineer.html">Data Engineering GenAI</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <!-- ==================== Product DROPDOWN ==================== -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="consultingDropdown" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Products
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="consultingDropdown">
+
+              <!-- GitGo Digital-->
+              <li class="dropdown-submenu">
+                <a class="dropdown-item dropdown-toggle" href="/Product/GitGoDigital.html">GitGo Digital</a>
+              </li>
+
+              <!-- Arogya Cleaning Management Software Care -->
+              <li class="dropdown-submenu">
+                <a class="dropdown-item dropdown-toggle" href="/Product/ArogyaClinicSoftware.html">Arogya Clinic Software</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="/pages/Research.html">Research</a></li>
+          <li class="nav-item"><a class="nav-link" href="/pages/Creers.html">Careers</a></li>
+          <li class="nav-item"><a class="nav-link" href="/pages/contact.html">Contact</a></li>
+        </ul>
+
+        <!-- Buttons -->
+        <div class="d-flex ms-lg-3 mt-3 mt-lg-0 me-5">
+          <a href="/pages/signup.html" class="btn btn-outline-success me-2">Sign Up</a>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#loginModal">
+            Login
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ==================== LOGIN MODAL ==================== -->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h5 class="modal-title" id="loginModalLabel">Login</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+
+        <!-- Modal Body -->
+        <div class="modal-body">
+          <form>
+            <!-- Email or Phone -->
+            <div class="mb-3">
+              <label for="loginInput" class="form-label">Email or Phone</label>
+              <input type="text" class="form-control" id="loginInput" placeholder="Enter email or phone" required>
+            </div>
+
+            <!-- Password -->
+            <div class="mb-3">
+              <label for="loginPassword" class="form-label">Password</label>
+              <input type="password" class="form-control" id="loginPassword" placeholder="Enter password" required>
+            </div>
+
+            <!-- Remember Me + Forgot Password -->
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="rememberMe">
+                <label class="form-check-label" for="rememberMe">Remember me</label>
+              </div>
+              <!-- Trigger Forgot Password Modal -->
+              <a href="#" class="text-decoration-none" data-bs-toggle="modal" data-bs-target="#forgotPasswordModal"
+                data-bs-dismiss="modal">Forgot Password?</a>
+            </div>
+
+            <!-- Buttons -->
+            <button type="submit" class="btn btn-primary w-100 mb-3">Login</button>
+            <a href="/pages/signup.html" class="btn btn-outline-primary w-100 mb-3">Create Account</a>
+
+            <!-- Social Login Icons -->
+            <div class="d-flex justify-content-center gap-4 flex-wrap">
+              <button type="button" class="btn btn-white shadow-sm"><i class="fa-solid fa-envelope text-danger fs-4"></i></button>
+              <button type="button" class="btn btn-white shadow-sm"><i class="fab fa-microsoft text-primary fs-4"></i></button>
+              <button type="button" class="btn btn-white shadow-sm"><i class="fab fa-facebook text-primary fs-4"></i></button>
+              <button type="button" class="btn btn-white shadow-sm"><i class="fab fa-apple text-dark fs-4"></i></button>
+              <button type="button" class="btn btn-white shadow-sm"><i class="fab fa-x-twitter fs-4"></i></button>
+              <button type="button" class="btn btn-white shadow-sm"><i class="fab fa-linkedin text-primary fs-4"></i></button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ==================== FORGOT PASSWORD MODAL ==================== -->
+  <div class="modal fade" id="forgotPasswordModal" tabindex="-1" aria-labelledby="forgotPasswordLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+
+        <!-- Header -->
+        <div class="modal-header">
+          <h5 class="modal-title" id="forgotPasswordLabel">Reset Password</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+
+        <!-- Body -->
+        <div class="modal-body">
+          <form id="resetForm">
+            <div class="mb-3">
+              <label for="resetInput" class="form-label">Enter Email or Phone</label>
+              <input type="text" class="form-control" id="resetInput" placeholder="example@mail.com or 9876543210" required>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Send Reset Link / Code</button>
+          </form>
+
+          <!-- Success Message -->
+          <div id="resetSuccess" class="alert alert-success mt-3 d-none"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- ==================== UX/UI DESIGN SECTION ==================== -->
+<section id="uxui" class="py-5 mt-5 position-relative overflow-hidden"
+  style="background: linear-gradient(135deg, #fff6cc 0%, #ffeb99 35%, #fff4d4 100%);
+         min-height: 92vh; overflow: hidden;">
+  
+  <div class="container position-relative" style="z-index: 2; overflow: hidden;">
+    <div class="row align-items-center gy-5" style="overflow: hidden;">
+
+      <!-- ===== Text Section ===== -->
+      <div class="col-lg-6" data-aos="fade-right" data-aos-duration="1000">
+        <div class="pe-lg-5">
+
+          <h2 class="fw-bold mb-4" style="font-size: 2.8rem; line-height: 1.2; color: #0A324A;">
+            Designing <span style="color:#d4a017;">Experiences</span><br>
+            That <span class="text-dark">Inspire & Engage</span>
+          </h2>
+
+          <p class="text-dark mb-3" style="font-size: 1.1rem; line-height: 1.9; text-align: justify;">
+            We don’t just design interfaces — we design experiences that connect, engage, and inspire. 
+            Our UX/UI experts combine <span class="fw-semibold">strategy</span>, 
+            <span class="fw-semibold">innovation</span>, and 
+            <span class="fw-semibold">aesthetics</span> to deliver seamless and meaningful user journeys.
+          </p>
+
+          <p class="text-dark mb-4" style="font-size: 1.1rem; line-height: 1.9; text-align: justify;">
+            Whether it’s a product, app, or platform, every detail we craft focuses on clarity, usability, 
+            and business impact — ensuring your digital experience stands out across every device.
+          </p>
+
+          <!-- Premium Gradient Button -->
+          <a href="/pages/contact.html" 
+             class="btn fw-semibold px-4 py-3 shadow-sm border-0"
+             style="
+               border-radius: 50px;
+               background: linear-gradient(90deg, #d4a017, #ffcc33);
+               color: #000;
+               font-size: 1rem;
+               letter-spacing: 0.5px;
+               transition: all 0.3s ease;
+             "
+             onmouseover="this.style.background='linear-gradient(90deg, #ffcc33, #d4a017)';"
+             onmouseout="this.style.background='linear-gradient(90deg, #d4a017, #ffcc33)';">
+             Let’s Design Together →
+          </a>
+
+        </div>
+      </div>
+
+      <!-- ===== Image Section ===== -->
+      <div class="col-lg-6 text-center position-relative" data-aos="fade-left" data-aos-duration="1000" style="overflow: hidden;">
+        <div class="position-relative d-inline-block" style="overflow: hidden;">
+
+          <!-- Gradient Border Frame (Rounded) -->
+          <div class="p-1" style="
+            background: linear-gradient(135deg, #ffd700, #ffcc33, #fff6cc);
+            border-radius: 20px; 
+            display: inline-block;
+            transition: all 0.4s ease;
+          ">
+            <div class="overflow-hidden shadow-lg bg-white" style="
+              border-radius: 20px;
+              max-width: 460px; 
+              transition: transform 0.4s ease, box-shadow 0.4s ease;
+            ">
+              <img 
+                src="/images/ux ui.jpg" 
+                alt="Professional UX/UI Design Team"
+                class="img-fluid"
+                style="object-fit: cover; border-radius: 20px; transition: transform 0.5s ease;"
+                onmouseover="this.style.transform='scale(1.05)';"
+                onmouseout="this.style.transform='scale(1)';"
+              />
+            </div>
+          </div>
+
+          <!-- Floating Icon Elements -->
+          <div style="position: absolute; top: -25px; right: -25px; background: #fff; 
+                      border-radius: 50%; width: 60px; height: 60px; 
+                      display: flex; align-items: center; justify-content: center; 
+                      box-shadow: 0 0 15px rgba(255, 215, 0, 0.4);">
+            <i class="bi bi-palette" style="font-size: 1.8rem; color: #d4a017;"></i>
+          </div>
+
+          <div style="position: absolute; bottom: -25px; left: -25px; background: #fff; 
+                      border-radius: 50%; width: 55px; height: 55px; 
+                      display: flex; align-items: center; justify-content: center; 
+                      box-shadow: 0 0 15px rgba(255, 204, 0, 0.4);">
+            <i class="bi bi-brush" style="font-size: 1.6rem; color: #2299D2;"></i>
+          </div>
+
+          <!-- Soft Glow -->
+          <div style="position: absolute; inset: 0; z-index: -1; 
+                      border-radius: 35px; 
+                      background: radial-gradient(circle at center, rgba(255,215,0,0.35), transparent 70%);
+                      filter: blur(25px);">
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- ==================== UX/UI DESIGN SERVICES ==================== -->
+<section class="container pb-5 pt-5 overflow-hidden" data-aos="fade-up" data-aos-duration="1000">
+  <div class="text-center mb-5" data-aos="zoom-in" data-aos-duration="1000">
+    <h1 class="fw-bold text-dark">UX/UI Design Services</h1>
+    <p class="fs-6 mb-0 text-secondary">
+      Craft Intuitive, Aesthetic, and Human-Centered Digital Experiences
+    </p>
+  </div>
+
+  <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center">
+
+    <!-- Card 1 -->
+    <div class="col" data-aos="fade-up" data-aos-delay="100">
+      <div class="card h-100 border border-warning border-1 shadow-sm text-center p-4 rounded-4 hover-shadow">
+        <div class="card-body">
+          <i class="fa-solid fa-users fa-2x text-primary mb-3"></i>
+          <h5 class="card-title fw-bold">User Research & Strategy</h5>
+          <p class="card-text small">
+            Gain insights into user needs, behavior, and goals through data-driven research to design user-focused solutions.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="col" data-aos="fade-up" data-aos-delay="200">
+      <div class="card h-100 border border-warning border-1 shadow-sm text-center p-4 rounded-4 hover-shadow">
+        <div class="card-body">
+          <i class="fa-solid fa-diagram-project fa-2x text-success mb-3"></i>
+          <h5 class="card-title fw-bold">Information Architecture</h5>
+          <p class="card-text small">
+            Organize and structure content effectively to ensure users find what they need effortlessly.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="col" data-aos="fade-up" data-aos-delay="300">
+      <div class="card h-100 border border-warning border-1 shadow-sm text-center p-4 rounded-4 hover-shadow">
+        <div class="card-body">
+          <i class="fa-solid fa-pencil-ruler fa-2x text-danger mb-3"></i>
+          <h5 class="card-title fw-bold">Wireframing & Prototyping</h5>
+          <p class="card-text small">
+            Transform ideas into interactive prototypes to visualize design flow and usability before development.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="col" data-aos="zoom-in" data-aos-delay="100">
+      <div class="card h-100 border border-warning border-1 shadow-sm text-center p-4 rounded-4 hover-shadow">
+        <div class="card-body">
+          <i class="fa-solid fa-palette fa-2x text-info mb-3"></i>
+          <h5 class="card-title fw-bold">Visual Interface Design</h5>
+          <p class="card-text small">
+            Design pixel-perfect, brand-aligned interfaces that delight users and communicate visually with clarity.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="col" data-aos="zoom-in" data-aos-delay="200">
+      <div class="card h-100 border border-warning border-1 shadow-sm text-center p-4 rounded-4 hover-shadow">
+        <div class="card-body">
+          <i class="fa-solid fa-object-group fa-2x text-primary mb-3"></i>
+          <h5 class="card-title fw-bold">Interaction Design</h5>
+          <p class="card-text small">
+            Define smooth animations, micro-interactions, and transitions that enhance engagement and usability.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 6 -->
+    <div class="col" data-aos="zoom-in" data-aos-delay="300">
+      <div class="card h-100 border border-warning border-1 shadow-sm text-center p-4 rounded-4 hover-shadow">
+        <div class="card-body">
+          <i class="fa-solid fa-vial fa-2x text-success mb-3"></i>
+          <h5 class="card-title fw-bold">Usability Testing</h5>
+          <p class="card-text small">
+            Test real user experiences, identify friction points, and refine designs for intuitive navigation and satisfaction.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 7 -->
+    <div class="col" data-aos="fade-up" data-aos-delay="100">
+      <div class="card h-100 border border-warning border-1 shadow-sm text-center p-4 rounded-4 hover-shadow">
+        <div class="card-body">
+          <i class="fa-solid fa-universal-access fa-2x text-warning mb-3"></i>
+          <h5 class="card-title fw-bold">Accessibility Design</h5>
+          <p class="card-text small">
+            Ensure inclusive design for all users by following accessibility standards and WCAG guidelines.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 8 -->
+    <div class="col" data-aos="fade-up" data-aos-delay="200">
+      <div class="card h-100 border border-warning border-1 shadow-sm text-center p-4 rounded-4 hover-shadow">
+        <div class="card-body">
+          <i class="fa-solid fa-swatchbook fa-2x text-danger mb-3"></i>
+          <h5 class="card-title fw-bold">Design System Creation</h5>
+          <p class="card-text small">
+            Build scalable design systems with reusable components, consistent styling, and clear documentation.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 9 -->
+    <div class="col" data-aos="fade-up" data-aos-delay="300">
+      <div class="card h-100 border border-warning border-1 shadow-sm text-center p-4 rounded-4 hover-shadow">
+        <div class="card-body">
+          <i class="fa-solid fa-hand-pointer fa-2x text-info mb-3"></i>
+          <h5 class="card-title fw-bold">UI/UX Optimization</h5>
+          <p class="card-text small">
+            Continuously analyze user behavior and enhance design performance for better engagement and conversions.
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ==================== CLIENT TESTIMONIALS ==================== -->
+<section id="testimonials" class="py-5 bg-light overflow-hidden" data-aos="fade-up" data-aos-duration="1000">
+  <div class="container">
+    <h2 class="text-center mb-5 display-5 fw-bold" data-aos="zoom-in">What Our Clients Say</h2>
+    <div class="row g-4 justify-content-center">
+      
+      <div class="col-md-4" data-aos="fade-right" data-aos-delay="100">
+        <div class="card p-4 h-100 shadow-sm border border-warning border-1 rounded-4">
+          <i class="fas fa-quote-left text-primary fs-3 mb-3"></i>
+          <p class="fst-italic text-secondary">
+            "The GITOQ team transformed our complex SaaS platform into a user-friendly interface. Their UX research helped us achieve a 30% increase in conversions."
+          </p>
+          <footer class="blockquote-footer mt-3">
+            <cite class="fw-bold text-dark">Aman Gupta</cite>
+          </footer>
+        </div>
+      </div>
+
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="card p-4 h-100 shadow-sm border border-warning border-1 rounded-4">
+          <i class="fas fa-quote-left text-primary fs-3 mb-3"></i>
+          <p class="fst-italic text-secondary">
+            "Their UI design was modern and visually stunning. The attention to mobile app usability was exceptional, and their communication was top-notch."
+          </p>
+          <footer class="blockquote-footer mt-3">
+            <cite class="fw-bold text-dark">Neha Sharma</cite>
+          </footer>
+        </div>
+      </div>
+
+      <div class="col-md-4" data-aos="fade-left" data-aos-delay="300">
+        <div class="card p-4 h-100 shadow-sm border border-warning border-1 rounded-4">
+          <i class="fas fa-quote-left text-primary fs-3 mb-3"></i>
+          <p class="fst-italic text-secondary">
+            "Hiring GITOQ for UX/UI optimization was a great decision. They understood our business goals and delivered designs that directly boosted our sales."
+          </p>
+          <footer class="blockquote-footer mt-3">
+            <cite class="fw-bold text-dark">Vikas Patel</cite>
+          </footer>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ==================== RESULTS SECTION ==================== -->
+<section id="results" class="py-5 bg-white overflow-hidden" data-aos="fade-up" data-aos-duration="1000">
+  <div class="container text-center">
+    <h2 class="mb-5 display-6 fw-bold text-dark" data-aos="zoom-in">
+      We Don’t Just Design — We Deliver Results
+    </h2>
+
+    <div class="row g-4 justify-content-center">
+      <div class="col-12 col-md-4" data-aos="flip-left" data-aos-delay="100">
+        <div class="p-3 border border-2 border-warning rounded-4 shadow-sm bg-light h-100">
+          <h3 class="fw-bold text-primary mb-2 fs-1">30%</h3>
+          <p class="text-secondary small mb-0">Average Increase in Conversion Rate (CTR)</p>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-4" data-aos="flip-up" data-aos-delay="200">
+        <div class="p-3 border border-2 border-warning rounded-4 shadow-sm bg-light h-100">
+          <h3 class="fw-bold text-primary mb-2 fs-1">50+</h3>
+          <p class="text-secondary small mb-0">Successfully Delivered Projects</p>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-4" data-aos="flip-right" data-aos-delay="300">
+        <div class="p-3 border border-2 border-warning rounded-4 shadow-sm bg-light h-100">
+          <h3 class="fw-bold text-primary mb-2 fs-1">95%</h3>
+          <p class="text-secondary small mb-0">Client Satisfaction Rate</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ==================== FOOTER ==================== -->
+<footer class="bg-dark text-white pt-5 pb-3">
+  <div class="container text-md-start">
+    <div class="row gy-4">
+
+      <!-- ===== 1. Logo & About ===== -->
+      <div class="col-lg-2 col-md-6">
+        <div class="d-flex align-items-center mb-3">
+          <a href="#" class="me-2">
+            <img src="/images/Gitgo_Logo-removebg-preview.png" alt="GitGo Logo" height="45">
+          </a>
+          <h5 class="text-warning mb-0">
+            GitGo <span class="text-white"><br>Technologies</span>
+          </h5>
+        </div>
+        <p class="small mb-0">
+          We are a digital powerhouse inspiring brands, customers, and clients with insightful
+          conversations that lead to digital transformation.
+        </p>
+      </div>
+
+      <!-- ===== 2. Services ===== -->
+      <div class="col">
+        <h5 class="mb-3 text-uppercase">Services</h5>
+        <ul class="list-unstyled small mb-0">
+          <li><a href="/Service/ux-ui.html" class="text-white text-decoration-none d-block py-1">UI/UX Design</a></li>
+          <li><a href="/Service/full-stack-development.html" class="text-white text-decoration-none d-block py-1">Full Stack Development</a></li>
+          <li><a href="/Service/cms-development.html" class="text-white text-decoration-none d-block py-1">CMS Development</a></li>
+          <li><a href="/Service/Website-deployment-services.html" class="text-white text-decoration-none d-block py-1">Website Deployment</a></li>
+          <li><a href="/Service/SEO.html" class="text-white text-decoration-none d-block py-1">Search Engine Optimization</a></li>
+          <li><a href="/Service/SMM.html" class="text-white text-decoration-none d-block py-1">Social Media Marketing</a></li>
+          <li><a href="/Service/Technical-support.html" class="text-white text-decoration-none d-block py-1">Technical Support</a></li>
+        </ul>
+      </div>
+
+      <!-- ===== 3. Consulting & Services ===== -->
+      <div class="col">
+        <h5 class="mb-3 text-uppercase">Consulting & Services</h5>
+        <ul class="list-unstyled small mb-0">
+          <li><a href="/Cosulting/MobileApp-development.html" class="text-white text-decoration-none d-block py-1">Mobile App Development</a></li>
+          <li><a href="/Cosulting/Software-Maintainance.html" class="text-white text-decoration-none d-block py-1">Software Maintenance</a></li>
+          <li><a href="/Cosulting/mobile-app-testing.html" class="text-white text-decoration-none d-block py-1">Mobile App Testing</a></li>
+          <li><a href="/Cosulting/data-analyst.html" class="text-white text-decoration-none d-block py-1">Data Analyst GenAI</a></li>
+          <li><a href="/Cosulting/data-engineer.html" class="text-white text-decoration-none d-block py-1">Data Engineering GenAI</a></li>
+        </ul>
+      </div>
+
+      <!-- ===== 4. Products ===== -->
+      <div class="col-lg-2 col-md-6">
+        <h5 class="mb-3 text-uppercase">Products</h5>
+        <ul class="list-unstyled small mb-0">
+          <li><a href="/Product/GitGoDigital.html" class="text-white text-decoration-none d-block py-1">GitGo Digital</a></li>
+          <li><a href="/Product/ArogyaClinicSoftware.html" class="text-white text-decoration-none d-block py-1">Arogya Clinic Software</a></li>
+        </ul>
+      </div>
+
+      <!-- ===== 5. Contact ===== -->
+      <div class="col-lg-2 col-md-6 pe-lg-5 me-lg-3">
+        <h5 class="mb-3 text-uppercase">Contact</h5>
+
+        <p class="d-flex align-items-center mb-1 small">
+          <i class="fa-solid fa-location-dot me-2 text-warning"></i> Delhi (NCR), India
+        </p>
+        <p class="d-flex align-items-center mb-1 small">
+          <i class="fa-solid fa-phone me-2 text-warning"></i> +91 95601 55633
+        </p>
+        <p class="d-flex align-items-center mb-1 small">
+          <i class="fa-solid fa-phone me-2 text-warning"></i> +91 95603 02033
+        </p>
+        <p class="d-flex align-items-center small mb-0">
+          <i class="fa-solid fa-envelope me-2 text-warning"></i>
+          info@gitgoqsoftandresearch.com
+        </p>
+
+        <div class="d-flex gap-2 mt-3">
+          <a href="#" class="btn btn-outline-warning btn-sm"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="#" class="btn btn-outline-warning btn-sm"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="#" class="btn btn-outline-warning btn-sm"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#" class="btn btn-outline-warning btn-sm"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.facebook.com/GitGoQSoftResearch" class="btn btn-outline-warning btn-sm"><i class="fa-brands fa-facebook"></i></a>
+        </div>
+      </div>
+
+      <!-- ===== 6. Map ===== -->
+      <div class="col-lg-2 col-md-6 ps-lg-5 ms-lg-2">
+        <h5 class="mb-3 text-uppercase">Location</h5>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3513.4931553800756!2d77.43335837440603!3d28.632122775667947!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cef3b180314a3%3A0xdb06e94f8dddf526!2sLa%20Gracia%2C%20Crossings%20Republik%2C%20Ghaziabad%2C%20Uttar%20Pradesh%20201016!5e0!3m2!1sen!2sin!4v1730180000000!5m2!1sen!2sin"
+          width="100%"
+          height="180"
+          style="border:0; border-radius:8px;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ===== Copyright ===== -->
+  <div class="text-center mt-4 border-top border-light pt-3">
+    <p class="mb-0 small text-white-50">
+      © 2025 GitGo Technologies. All Rights Reserved.
+    </p>
+  </div>
+</footer>
+
+  <!-- ==================== SCRIPTS ==================== -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+  <script src="/js/main.js"></script>
+  <!-- ------aos  -->
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   <script>AOS.init();</script>
+</body>
+</html>

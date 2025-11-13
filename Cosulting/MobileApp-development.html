@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/x-icon" href="/images/Gitgo_Logo-removebg-preview.png">
+  <title>Mobile Application Development | GitGo Technologies</title>
+
+    <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+   <!-- Using Inter (body), Montserrat (headings), Open Sans (fallback/secondary) -->
+     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="/css/media.css" />
+  <!-- -----AOS libraries------------ -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+<!-- ==================== HEADER ==================== -->
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+    <div class="container-fluid">
+
+      <!-- Logo -->
+      <a class="navbar-brand ms-md-3 ms-xl-4" href="#">
+        <img src="/images/Gitgo_Logo-removebg-preview.png" alt="GitGo Logo" height="55"
+          class="d-inline-block align-text-top ms-2" />
+      </a>
+
+      <!-- Toggler -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navbar Content -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav align-items-center ms-auto">
+
+          <!-- Home & About -->
+          <li class="nav-item"><a class="nav-link" href="/index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="/pages/about.html">About</a></li>
+
+          <!-- ==================== SERVICES DROPDOWN ==================== -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Services
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+
+              <!-- Website Design -->
+              <li class="dropdown-submenu">
+                <a class="dropdown-item dropdown-toggle d-flex justify-content-between align-items-center" href="#">Website Design<i class="fa-solid fa-angle-right"></i></a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="/Service/ux-ui.html">UI/UX Design</a></li>
+                  <li><a class="dropdown-item" href="/Service/figma.html">Figma</a></li>
+                  <li><a class="dropdown-item" href="Service/adobe.html">Adobe</a></li>
+                </ul>
+              </li>
+
+              <!-- Website Development -->
+              <li class="dropdown-submenu">
+                <a class="dropdown-item dropdown-toggle d-flex justify-content-between align-items-center" href="#">Website Development<i class="fa-solid fa-angle-right"></i></a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="/Service/Front-end-development.html">Frontend Development</a></li>
+                  <li><a class="dropdown-item" href="/Service/backend-development.html">Backend Development</a></li>
+                  <li><a class="dropdown-item" href="/Service/full-stack-development.html">Full Stack Development</a></li>
+                  <li><a class="dropdown-item" href="/Service/API-integration.html">API Integration</a></li>
+                  <li><a class="dropdown-item" href="/Service/cms-development.html">CMS Development</a></li>
+                </ul>
+              </li>
+
+              <!-- Deployment & Support -->
+              <li class="dropdown-submenu">
+                <a class="dropdown-item dropdown-toggle d-flex justify-content-between align-items-center" href="#">Website Deployment & Support<i class="fa-solid fa-angle-right"></i></a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="/Service/hosting-server-setup.html">Hosting & Server Setup</a></li>
+                  <li><a class="dropdown-item" href="/Service/Website-deployment-services.html">Website Deployment Services</a></li>
+                  <li><a class="dropdown-item" href="/Service/Security-backup.html">Security & Backup</a></li>
+                  <li><a class="dropdown-item" href="/Service/Technical-support.html">Technical Support</a></li>
+                </ul>
+              </li>
+
+              <!-- Digital Marketing -->
+              <li class="dropdown-submenu">
+                <a class="dropdown-item dropdown-toggle d-flex justify-content-between align-items-center" href="#">Digital Marketing<i class="fa-solid fa-angle-right"></i></a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="/Service/SEO.html">Search Engine Optimization</a></li>
+                  <li><a class="dropdown-item" href="/Service/SMM.html">Social Media Marketing</a></li>
+                  <li><a class="dropdown-item" href="/Service/PPC.html">Pay Per Click</a></li>
+                  <li><a class="dropdown-item" href="/Service/emailMarketing.html">Email Marketing</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+
+          <!-- ==================== CONSULTING DROPDOWN ==================== -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="consultingDropdown" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Consulting & Services
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="consultingDropdown">
+
+              <!-- Software Development -->
+              <li class="dropdown-submenu">
+                <a class="dropdown-item dropdown-toggle dropdown-item dropdown-toggle d-flex justify-content-between align-items-center" href="#">Software Development<i class="fa-solid fa-angle-right"></i></a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="/Cosulting/Custom-Software-development.html">Custom Software Development</a></li>
+                  <li><a class="dropdown-item" href="/Cosulting/Software-Maintainance.html">Software Maintenance</a></li>
+                  <li><a class="dropdown-item" href="/Cosulting/MobileApp-development.html">Mobile Application Development</a></li>
+                </ul>
+              </li>
+
+              <!-- Software Testing -->
+              <li class="dropdown-submenu">
+                <a class="dropdown-item dropdown-toggle dropdown-item dropdown-toggle d-flex justify-content-between align-items-center" href="#">Software Testing<i class="fa-solid fa-angle-right"></i></a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="/Cosulting/manual-testing.html">Manual Testing</a></li>
+                  <li><a class="dropdown-item" href="/Cosulting/Automation-testing.html">Automation Testing</a></li>
+                  <li><a class="dropdown-item" href="/Cosulting/performance-testing.html">Performance Testing</a></li>
+                  <li><a class="dropdown-item" href="/Cosulting/mobile-app-testing.html">Mobile App Testing</a></li>
+                  <li><a class="dropdown-item" href="/Cosulting/api-testing.html">API Testing</a></li>
+                  <li><a class="dropdown-item" href="/Cosulting/Bug-tracking.html">Bug Tracking & Reporting</a></li>
+                </ul>
+              </li>
+
+              <!-- Analyst & Engineer -->
+              <li class="dropdown-submenu">
+                <a class="dropdown-item dropdown-toggle dropdown-item dropdown-toggle d-flex justify-content-between align-items-center" href="#">Analyst | Engineer GenAI<i class="fa-solid fa-angle-right"></i></a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="/Cosulting/data-analyst.html">Data Analyst GenAI</a></li>
+                  <li><a class="dropdown-item" href="/Cosulting/data-engineer.html">Data Engineering GenAI</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <!-- ==================== Product DROPDOWN ==================== -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="consultingDropdown" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Products
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="consultingDropdown">
+
+              <!-- GitGo Digital-->
+              <li class="dropdown-submenu">
+                <a class="dropdown-item dropdown-toggle" href="/Product/GitGoDigital.html">GitGo Digital</a>
+              </li>
+
+              <!-- Arogya Cleaning Management Software Care -->
+              <li class="dropdown-submenu">
+                <a class="dropdown-item dropdown-toggle" href="/Product/ArogyaClinicSoftware.html">Arogya Clinic Software</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="/pages/Research.html">Research</a></li>
+          <li class="nav-item"><a class="nav-link" href="/pages/Creers.html">Careers</a></li>
+          <li class="nav-item"><a class="nav-link" href="/pages/contact.html">Contact</a></li>
+        </ul>
+
+        <!-- Buttons -->
+        <div class="d-flex ms-lg-3 mt-3 mt-lg-0 me-5">
+          <a href="/pages/signup.html" class="btn btn-outline-success me-2">Sign Up</a>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#loginModal">
+            Login
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ==================== LOGIN MODAL ==================== -->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h5 class="modal-title" id="loginModalLabel">Login</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+
+        <!-- Modal Body -->
+        <div class="modal-body">
+          <form>
+            <!-- Email or Phone -->
+            <div class="mb-3">
+              <label for="loginInput" class="form-label">Email or Phone</label>
+              <input type="text" class="form-control" id="loginInput" placeholder="Enter email or phone" required>
+            </div>
+
+            <!-- Password -->
+            <div class="mb-3">
+              <label for="loginPassword" class="form-label">Password</label>
+              <input type="password" class="form-control" id="loginPassword" placeholder="Enter password" required>
+            </div>
+
+            <!-- Remember Me + Forgot Password -->
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="rememberMe">
+                <label class="form-check-label" for="rememberMe">Remember me</label>
+              </div>
+              <!-- Trigger Forgot Password Modal -->
+              <a href="#" class="text-decoration-none" data-bs-toggle="modal" data-bs-target="#forgotPasswordModal"
+                data-bs-dismiss="modal">Forgot Password?</a>
+            </div>
+
+            <!-- Buttons -->
+            <button type="submit" class="btn btn-primary w-100 mb-3">Login</button>
+            <a href="/pages/signup.html" class="btn btn-outline-primary w-100 mb-3">Create Account</a>
+
+            <!-- Social Login Icons -->
+            <div class="d-flex justify-content-center gap-4 flex-wrap">
+              <button type="button" class="btn btn-white shadow-sm"><i class="fa-solid fa-envelope text-danger fs-4"></i></button>
+              <button type="button" class="btn btn-white shadow-sm"><i class="fab fa-microsoft text-primary fs-4"></i></button>
+              <button type="button" class="btn btn-white shadow-sm"><i class="fab fa-facebook text-primary fs-4"></i></button>
+              <button type="button" class="btn btn-white shadow-sm"><i class="fab fa-apple text-dark fs-4"></i></button>
+              <button type="button" class="btn btn-white shadow-sm"><i class="fab fa-x-twitter fs-4"></i></button>
+              <button type="button" class="btn btn-white shadow-sm"><i class="fab fa-linkedin text-primary fs-4"></i></button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ==================== FORGOT PASSWORD MODAL ==================== -->
+  <div class="modal fade" id="forgotPasswordModal" tabindex="-1" aria-labelledby="forgotPasswordLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+
+        <!-- Header -->
+        <div class="modal-header">
+          <h5 class="modal-title" id="forgotPasswordLabel">Reset Password</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+
+        <!-- Body -->
+        <div class="modal-body">
+          <form id="resetForm">
+            <div class="mb-3">
+              <label for="resetInput" class="form-label">Enter Email or Phone</label>
+              <input type="text" class="form-control" id="resetInput" placeholder="example@mail.com or 9876543210" required>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Send Reset Link / Code</button>
+          </form>
+
+          <!-- Success Message -->
+          <div id="resetSuccess" class="alert alert-success mt-3 d-none"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- ==================== MOBILE APP DEVELOPMENT SERVICES SECTION ==================== -->
+<section id="api-services" class="py-5 mt-5" style="background: linear-gradient(135deg, #fff9e6, #ffffff);">
+  <div class="container" data-aos="fade-up">
+
+    <!-- ====== Section Header ====== -->
+    <div class="text-center mb-5" data-aos="fade-up" data-aos-delay="100">
+      <h1 class="fw-bold text-dark mb-3">Mobile App Development Services</h1>
+      <p class="text-muted mb-0 fs-6">
+        Build user-friendly, scalable, and high-performance mobile applications tailored to your business goals.
+      </p>
+    </div>
+
+    <!-- ====== Services Grid ====== -->
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+      
+      <!-- Custom App Development -->
+      <div class="col" data-aos="zoom-in" data-aos-delay="100">
+        <div class="card h-100 border-primary shadow-sm text-center p-4 rounded-4">
+          <div class="card-body">
+            <i class="fa-solid fa-mobile-screen-button fa-2x text-primary mb-3"></i>
+            <h5 class="fw-bold mb-2">Custom App Development</h5>
+            <p class="small text-muted">
+              Create tailor-made mobile apps for iOS and Android with optimized performance and design.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cross-Platform Development -->
+      <div class="col" data-aos="zoom-in" data-aos-delay="200">
+        <div class="card h-100 border-success shadow-sm text-center p-4 rounded-4">
+          <div class="card-body">
+            <i class="fa-solid fa-code text-success fa-2x mb-3"></i>
+            <h5 class="fw-bold mb-2">Cross-Platform Development</h5>
+            <p class="small text-muted">
+              Build apps that run seamlessly across iOS and Android using React Native, Flutter, or Xamarin.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- UI/UX Design -->
+      <div class="col" data-aos="zoom-in" data-aos-delay="300">
+        <div class="card h-100 border-warning shadow-sm text-center p-4 rounded-4">
+          <div class="card-body">
+            <i class="fa-solid fa-pencil-ruler text-warning fa-2x mb-3"></i>
+            <h5 class="fw-bold mb-2">UI/UX Design</h5>
+            <p class="small text-muted">
+              Design intuitive, engaging, and user-friendly interfaces to enhance app usability and retention.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- App Security & Maintenance -->
+      <div class="col" data-aos="zoom-in" data-aos-delay="400">
+        <div class="card h-100 border-danger shadow-sm text-center p-4 rounded-4">
+          <div class="card-body">
+            <i class="fa-solid fa-shield-halved fa-2x text-danger mb-3"></i>
+            <h5 class="fw-bold mb-2">App Security & Maintenance</h5>
+            <p class="small text-muted">
+              Ensure apps are secure, updated, and maintained for smooth performance and data protection.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- App Integration Services -->
+      <div class="col" data-aos="zoom-in" data-aos-delay="100">
+        <div class="card h-100 border-info shadow-sm text-center p-4 rounded-4">
+          <div class="card-body">
+            <i class="fa-solid fa-plug fa-2x text-info mb-3"></i>
+            <h5 class="fw-bold mb-2">App Integration Services</h5>
+            <p class="small text-muted">
+              Connect mobile apps with third-party services, APIs, and cloud platforms for seamless functionality.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Backend Development -->
+      <div class="col" data-aos="zoom-in" data-aos-delay="200">
+        <div class="card h-100 border-secondary shadow-sm text-center p-4 rounded-4">
+          <div class="card-body">
+            <i class="fa-solid fa-server fa-2x text-secondary mb-3"></i>
+            <h5 class="fw-bold mb-2">Backend Development</h5>
+            <p class="small text-muted">
+              Develop scalable, robust backends for apps with APIs, database integration, and server management.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- App Testing & QA -->
+      <div class="col" data-aos="zoom-in" data-aos-delay="300">
+        <div class="card h-100 border-dark shadow-sm text-center p-4 rounded-4">
+          <div class="card-body">
+            <i class="fa-solid fa-bug-slash fa-2x text-dark mb-3"></i>
+            <h5 class="fw-bold mb-2">App Testing & QA</h5>
+            <p class="small text-muted">
+              Comprehensive testing for bugs, performance, and usability to ensure flawless app operation.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- App Maintenance & Updates -->
+      <div class="col" data-aos="zoom-in" data-aos-delay="400">
+        <div class="card h-100 border-warning shadow-sm text-center p-4 rounded-4">
+          <div class="card-body">
+            <i class="fa-solid fa-gears fa-2x text-warning mb-3"></i>
+            <h5 class="fw-bold mb-2">App Maintenance & Updates</h5>
+            <p class="small text-muted">
+              Regular updates, version control, and optimization to keep your app modern and efficient.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ==================== MOBILE APP WORKFLOW SECTION ==================== -->
+<section id="api-workflow" class="py-5 bg-light text-center">
+  <div class="container" data-aos="fade-up">
+
+    <!-- Section Title -->
+    <h2 class="fw-bold mb-4 text-dark" data-aos="fade-up" data-aos-delay="100">
+      Our Mobile App Development Workflow
+    </h2>
+
+    <!-- Workflow Steps -->
+    <div class="row g-4">
+      <div class="col-md-3" data-aos="fade-up" data-aos-delay="100">
+        <div class="bg-white border rounded-4 shadow-sm p-4 h-100">
+          <i class="fa-solid fa-lightbulb text-primary fa-2x mb-3"></i>
+          <h6 class="fw-bold">1. Requirement Analysis</h6>
+          <p class="small text-muted mb-0">Understand app goals, user needs, and functional requirements.</p>
+        </div>
+      </div>
+
+      <div class="col-md-3" data-aos="fade-up" data-aos-delay="200">
+        <div class="bg-white border rounded-4 shadow-sm p-4 h-100">
+          <i class="fa-solid fa-pencil-ruler text-success fa-2x mb-3"></i>
+          <h6 class="fw-bold">2. UI/UX Design</h6>
+          <p class="small text-muted mb-0">Design user-friendly interfaces and seamless user experiences.</p>
+        </div>
+      </div>
+
+      <div class="col-md-3" data-aos="fade-up" data-aos-delay="300">
+        <div class="bg-white border rounded-4 shadow-sm p-4 h-100">
+          <i class="fa-solid fa-code text-warning fa-2x mb-3"></i>
+          <h6 class="fw-bold">3. Development & Testing</h6>
+          <p class="small text-muted mb-0">Code the app, integrate features, and conduct rigorous testing.</p>
+        </div>
+      </div>
+
+      <div class="col-md-3" data-aos="fade-up" data-aos-delay="400">
+        <div class="bg-white border rounded-4 shadow-sm p-4 h-100">
+          <i class="fa-solid fa-rocket text-danger fa-2x mb-3"></i>
+          <h6 class="fw-bold">4. Deployment & Monitoring</h6>
+          <p class="small text-muted mb-0">Launch the app to stores and monitor performance for improvements.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== TECHNOLOGIES USED SECTION ==================== -->
+<section id="technologies" class="py-5 bg-light text-center">
+  <div class="container-fluid" data-aos="fade-up">
+    <h2 class="fw-bold mb-3 text-dark" style="font-family: 'Poppins', sans-serif;">Technologies & Tools We Use</h2>
+    <p class="text-muted fs-5 mb-5 mx-auto" style="max-width: 800px; font-family: 'Open Sans', sans-serif;">
+      Empowering our mobile app solutions with reliable, modern, and high-performance technologies.
+    </p>
+
+    <div class="row justify-content-center g-3">
+      <!-- Each tech box with fade-up animation -->
+      <div class="col-6 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="100">
+        <div class="border bg-white shadow-sm rounded-4 p-4 d-flex flex-column align-items-center justify-content-center h-100">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg" width="70" class="mb-3" alt="Postman">
+          <h6 class="fw-semibold mb-0 text-dark">Postman</h6>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="200">
+        <div class="border bg-white shadow-sm rounded-4 p-4 d-flex flex-column align-items-center justify-content-center h-100">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/swagger/swagger-original.svg" width="70" class="mb-3" alt="Swagger">
+          <h6 class="fw-semibold mb-0 text-dark">Swagger</h6>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="300">
+        <div class="border bg-white shadow-sm rounded-4 p-4 d-flex flex-column align-items-center justify-content-center h-100">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" width="70" class="mb-3" alt="Node.js">
+          <h6 class="fw-semibold mb-0 text-dark">Node.js</h6>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="400">
+        <div class="border bg-white shadow-sm rounded-4 p-4 d-flex flex-column align-items-center justify-content-center h-100">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="70" class="mb-3" alt="Python">
+          <h6 class="fw-semibold mb-0 text-dark">Python</h6>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="500">
+        <div class="border bg-white shadow-sm rounded-4 p-4 d-flex flex-column align-items-center justify-content-center h-100">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg" width="70" class="mb-3" alt="GraphQL">
+          <h6 class="fw-semibold mb-0 text-dark">GraphQL</h6>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== WHY CHOOSE US SECTION ==================== -->
+<section id="why-choose-us" class="py-5 bg-white">
+  <div class="container" data-aos="fade-up">
+
+    <h2 class="fw-bold text-center mb-4 text-dark" data-aos="fade-up" data-aos-delay="100">
+      Why Choose Our Mobile App Development Experts
+    </h2>
+
+    <div class="row g-4 text-center">
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="bg-light border rounded-4 shadow-sm p-4 h-100">
+          <i class="fa-solid fa-puzzle-piece text-primary fa-2x mb-3"></i>
+          <h6 class="fw-bold">User-Centric Design</h6>
+          <p class="small text-muted mb-0">We create intuitive and engaging apps for seamless user experiences.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="bg-light border rounded-4 shadow-sm p-4 h-100">
+          <i class="fa-solid fa-shield text-success fa-2x mb-3"></i>
+          <h6 class="fw-bold">Secure & Reliable</h6>
+          <p class="small text-muted mb-0">Strong encryption and best practices to protect user data and app integrity.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+        <div class="bg-light border rounded-4 shadow-sm p-4 h-100">
+          <i class="fa-solid fa-clock text-danger fa-2x mb-3"></i>
+          <h6 class="fw-bold">Fast & Efficient</h6>
+          <p class="small text-muted mb-0">Optimized development ensures quick delivery with high-quality results.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center mt-5" data-aos="zoom-in" data-aos-delay="200">
+      <a href="/pages/contact.html" class="btn btn-warning px-5 py-3 fw-bold rounded-pill shadow">
+        Launch Your Mobile App with Experts
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ==================== FOOTER ==================== -->
+<footer class="bg-dark text-white pt-5 pb-3">
+  <div class="container text-md-start">
+    <div class="row gy-4">
+
+      <!-- ===== 1. Logo & About ===== -->
+      <div class="col-lg-2 col-md-6">
+        <div class="d-flex align-items-center mb-3">
+          <a href="#" class="me-2">
+            <img src="/images/Gitgo_Logo-removebg-preview.png" alt="GitGo Logo" height="45">
+          </a>
+          <h5 class="text-warning mb-0">
+            GitGo <span class="text-white"><br>Technologies</span>
+          </h5>
+        </div>
+        <p class="small mb-0">
+          We are a digital powerhouse inspiring brands, customers, and clients with insightful
+          conversations that lead to digital transformation.
+        </p>
+      </div>
+
+      <!-- ===== 2. Services ===== -->
+      <div class="col">
+        <h5 class="mb-3 text-uppercase">Services</h5>
+        <ul class="list-unstyled small mb-0">
+          <li><a href="/Service/ux-ui.html" class="text-white text-decoration-none d-block py-1">UI/UX Design</a></li>
+          <li><a href="/Service/full-stack-development.html" class="text-white text-decoration-none d-block py-1">Full Stack Development</a></li>
+          <li><a href="/Service/cms-development.html" class="text-white text-decoration-none d-block py-1">CMS Development</a></li>
+          <li><a href="/Service/Website-deployment-services.html" class="text-white text-decoration-none d-block py-1">Website Deployment</a></li>
+          <li><a href="/Service/SEO.html" class="text-white text-decoration-none d-block py-1">Search Engine Optimization</a></li>
+          <li><a href="/Service/SMM.html" class="text-white text-decoration-none d-block py-1">Social Media Marketing</a></li>
+          <li><a href="/Service/Technical-support.html" class="text-white text-decoration-none d-block py-1">Technical Support</a></li>
+        </ul>
+      </div>
+
+      <!-- ===== 3. Consulting & Services ===== -->
+      <div class="col">
+        <h5 class="mb-3 text-uppercase">Consulting & Services</h5>
+        <ul class="list-unstyled small mb-0">
+          <li><a href="/Cosulting/MobileApp-development.html" class="text-white text-decoration-none d-block py-1">Mobile App Development</a></li>
+          <li><a href="/Cosulting/Software-Maintainance.html" class="text-white text-decoration-none d-block py-1">Software Maintenance</a></li>
+          <li><a href="/Cosulting/mobile-app-testing.html" class="text-white text-decoration-none d-block py-1">Mobile App Testing</a></li>
+          <li><a href="/Cosulting/data-analyst.html" class="text-white text-decoration-none d-block py-1">Data Analyst GenAI</a></li>
+          <li><a href="/Cosulting/data-engineer.html" class="text-white text-decoration-none d-block py-1">Data Engineering GenAI</a></li>
+        </ul>
+      </div>
+
+      <!-- ===== 4. Products ===== -->
+      <div class="col-lg-2 col-md-6">
+        <h5 class="mb-3 text-uppercase">Products</h5>
+        <ul class="list-unstyled small mb-0">
+          <li><a href="/Product/GitGoDigital.html" class="text-white text-decoration-none d-block py-1">GitGo Digital</a></li>
+          <li><a href="/Product/ArogyaClinicSoftware.html" class="text-white text-decoration-none d-block py-1">Arogya Clinic Software</a></li>
+        </ul>
+      </div>
+
+      <!-- ===== 5. Contact ===== -->
+      <div class="col-lg-2 col-md-6 pe-lg-5 me-lg-3">
+        <h5 class="mb-3 text-uppercase">Contact</h5>
+
+        <p class="d-flex align-items-center mb-1 small">
+          <i class="fa-solid fa-location-dot me-2 text-warning"></i> Delhi (NCR), India
+        </p>
+        <p class="d-flex align-items-center mb-1 small">
+          <i class="fa-solid fa-phone me-2 text-warning"></i> +91 95601 55633
+        </p>
+        <p class="d-flex align-items-center mb-1 small">
+          <i class="fa-solid fa-phone me-2 text-warning"></i> +91 95603 02033
+        </p>
+        <p class="d-flex align-items-center small mb-0">
+          <i class="fa-solid fa-envelope me-2 text-warning"></i>
+          info@gitgoqsoftandresearch.com
+        </p>
+
+        <div class="d-flex gap-2 mt-3">
+          <a href="#" class="btn btn-outline-warning btn-sm"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="#" class="btn btn-outline-warning btn-sm"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="#" class="btn btn-outline-warning btn-sm"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#" class="btn btn-outline-warning btn-sm"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.facebook.com/GitGoQSoftResearch" class="btn btn-outline-warning btn-sm"><i class="fa-brands fa-facebook"></i></a>
+        </div>
+      </div>
+
+      <!-- ===== 6. Map ===== -->
+      <div class="col-lg-2 col-md-6 ps-lg-5 ms-lg-2">
+        <h5 class="mb-3 text-uppercase">Location</h5>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3513.4931553800756!2d77.43335837440603!3d28.632122775667947!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cef3b180314a3%3A0xdb06e94f8dddf526!2sLa%20Gracia%2C%20Crossings%20Republik%2C%20Ghaziabad%2C%20Uttar%20Pradesh%20201016!5e0!3m2!1sen!2sin!4v1730180000000!5m2!1sen!2sin"
+          width="100%"
+          height="180"
+          style="border:0; border-radius:8px;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ===== Copyright ===== -->
+  <div class="text-center mt-4 border-top border-light pt-3">
+    <p class="mb-0 small text-white-50">
+      © 2025 GitGo Technologies. All Rights Reserved.
+    </p>
+  </div>
+</footer>
+
+  <!-- ==================== SCRIPTS ==================== -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+  <script src="/js/main.js"></script>
+  <!-- ------aos  -->
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   <script>AOS.init();</script>
+</body>
+</html>
